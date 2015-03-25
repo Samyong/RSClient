@@ -1,0 +1,11 @@
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\bin\Debug\RSClient.exe
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\bin\Debug\RSClient.pdb
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\MainWindow.baml
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\App.g.cs
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\RSClient_MarkupCompile.cache
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\RSClient.g.resources
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\RSClient.Properties.Resources.resources
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\RSClient.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\RSClient.exe
+C:\Users\Sam\Documents\Git\Repositories\RS Client\RSClient\RSClient\obj\x86\Debug\RSClient.pdb

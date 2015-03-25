@@ -1,0 +1,80 @@
+﻿<Window x:Class="RSClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="768" Width="1788">
+    <Grid>
+        <Menu Height="23" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="1766">
+            <MenuItem Header="File">
+                <MenuItem Header="Open"></MenuItem>
+                <MenuItem Header="Save"></MenuItem>
+                <MenuItem Header="Close"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Calculators">
+                <MenuItem Header="Combat Level"></MenuItem>
+                <MenuItem Header="XP to next level"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <DockPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,29,257,0">
+            <WebBrowser DockPanel.Dock="left" Height="auto" HorizontalAlignment="Left" Margin="0,0,10,0" Name="webBrowser1" VerticalAlignment="Top" Width="auto" Source="http://www.runescape.com/game?jptg=ia&amp;jptv=navbar" />
+        </DockPanel>
+        <GroupBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Header="Character Stats" Height="700" Margin="1515,29,12,0" Name="groupBox1">
+            <Grid>
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="6,6,0,0" Name="textBlock1" Text="Character" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="58,3,0,0" Name="inCharName" VerticalAlignment="Top" Width="136" />
+                <Button Content="Fetch Skills" Height="23" HorizontalAlignment="Left" Margin="119,32,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+                <Image Height="25" Width="25" Margin="6,82,196,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Source="/RSClient;component/images/Attack.png" />
+                <Image Height="25" Margin="6,113,196,0" Name="image2" Source="/RSClient;component/images/Defence.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Height="25" Margin="6,144,196,0" Name="image3" Source="/RSClient;component/images/Strength.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Height="25" Margin="77,84,125,0" Name="image4" Source="/RSClient;component/images/Constitution.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Margin="77,115,125,0" Name="image5" Source="/RSClient;component/images/Agility.png" Stretch="Fill" Width="25" Height="25" VerticalAlignment="Top" />
+                <Image Height="25" Margin="77,0,125,510" Name="image6" Source="/RSClient;component/images/Herblore.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,84,0,0" Name="attack" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,115,0,0" Name="defence" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,144,0,0" Name="strength" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <Image Margin="6,175,196,479" Name="image7" Source="/RSClient;component/images/Ranged.png" Stretch="Fill" Width="25" />
+                <Image Height="25" Margin="6,206,196,0" Name="image8" Source="/RSClient;component/images/Prayer.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Margin="6,237,196,417" Name="image9" Source="/RSClient;component/images/Magic.png" Stretch="Fill" Width="25" />
+                <Image Height="25" Margin="6,0,196,387" Name="image10" Source="/RSClient;component/images/Runecrafting.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="6,0,196,357" Name="image11" Source="/RSClient;component/images/Construction.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="6,0,196,327" Name="image12" Source="/RSClient;component/images/Dungeoneering.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="77,0,125,480" Name="image13" Source="/RSClient;component/images/Thieving.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="77,0,125,449" Name="image14" Source="/RSClient;component/images/Crafting.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="77,0,125,418" Name="image15" Source="/RSClient;component/images/Fletching.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="77,0,125,388" Name="image16" Source="/RSClient;component/images/Slayer.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="77,0,125,358" Name="image17" Source="/RSClient;component/images/Hunter.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="77,0,125,328" Name="image18" Source="/RSClient;component/images/Divination.png" Stretch="Fill" VerticalAlignment="Bottom" Width="25" />
+                <Image Height="25" Margin="146,84,56,0" Name="image19" Source="/RSClient;component/images/Mining.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,174,0,0" Name="ranged" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,205,0,0" Name="prayer" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,234,0,0" Name="magic" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,265,0,0" Name="runecrafting" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,296,0,0" Name="construction" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,325,0,0" Name="dungeoneering" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock HorizontalAlignment="Left" Margin="106,86,0,572" Name="constitution" Text="-/-" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,117,0,0" Name="agility" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,146,0,0" Name="herblore" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,176,0,0" Name="thieving" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,207,0,0" Name="crafting" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,236,0,0" Name="fletching" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,267,0,0" Name="slayer" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,298,0,0" Name="hunter" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,327,0,0" Name="divination" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <Image Height="25" Margin="146,115,56,0" Name="image20" Source="/RSClient;component/images/Smithing.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Height="25" Margin="146,146,56,0" Name="image21" Source="/RSClient;component/images/Fishing.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Height="25" Margin="146,177,56,0" Name="image22" Source="/RSClient;component/images/Cooking.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Height="25" Margin="146,208,56,0" Name="image23" Source="/RSClient;component/images/Firemaking.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Margin="146,239,56,417" Name="image24" Source="/RSClient;component/images/Woodcutting.png" Stretch="Fill" Width="25" />
+                <Image Height="25" Margin="146,268,56,0" Name="image25" Source="/RSClient;component/images/Farming.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <Image Height="25" Margin="146,299,56,0" Name="image26" Source="/RSClient;component/images/Summoning.png" Stretch="Fill" VerticalAlignment="Top" Width="25" />
+                <TextBlock HorizontalAlignment="Left" Margin="174,86,0,572" Name="mining" Text="-/-" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,117,0,0" Name="smithing" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,146,0,0" Name="fishing" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,176,0,0" Name="cooking" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,207,0,0" Name="firemaking" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,236,0,0" Name="woodcutting" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,267,0,0" Name="farming" Text="-/-" VerticalAlignment="Top" Width="34" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="174,298,0,0" Name="summoning" Text="-/-" VerticalAlignment="Top" Width="34" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
